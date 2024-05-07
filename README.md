@@ -29,6 +29,9 @@ pnpm install
 pnpm i cesium vite-plugin-cesium 并设置到vite.config.js中 [选择js时]
 pnpm i cesium typescript-vue-plugin 并设置到ts.config.json中 【选择ts时】
 
+引入 unplugin-auto-import
+引入 vue-router @vueuse/core axios element-plus lodash-es pinia等常用依赖
+
 ```
 
 # 常见问题
