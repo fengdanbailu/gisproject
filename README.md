@@ -26,7 +26,8 @@ heighchart
 pnpm create vite gisproject
 cd gisproject
 pnpm install
-pnpm i cesium vite-plugin-cesium 并设置到vite.config.js中
+pnpm i cesium vite-plugin-cesium 并设置到vite.config.js中 [选择js时]
+pnpm i cesium typescript-vue-plugin 并设置到ts.config.json中 【选择ts时】
 
 ```
 
@@ -34,9 +35,7 @@ pnpm i cesium vite-plugin-cesium 并设置到vite.config.js中
 
 ```
 问： 启动后，在 chrome 中看不到 cesium 的地球？
-
-答：
-原因一，没有加入 token，免费申请一个即可。
+答：原因一，没有加入 token，免费申请一个即可。
 原因二，版本不兼容，需要切换到低版本, 或者换个浏览器（比如 chrome beta版本呢，360急速浏览器等）
 ```
 
@@ -44,10 +43,7 @@ pnpm i cesium vite-plugin-cesium 并设置到vite.config.js中
 
 ```
 注册token：https://ion.cesium.com/signup/
-
 参考博客: https://blog.csdn.net/qq_40640910/article/details/135768890
-
 官网例子：https://cesium.com/learn/
-
 bili的学习视频：https://www.bilibili.com/video/BV1BM4m1Q7id?p=4&vd_source=ca953f6461aa8c9e42982ba8180f3c3a
 ```

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted } from "vue";
 import * as Cesium from "cesium";
 
@@ -115,6 +115,7 @@ const test2 = () => {
     },
   });
 };
+
 const test1 = () => {
   // 精度维度高度，转化为笛卡尔坐标系
   const cartesian1 = Cesium.Cartesian3.fromDegrees(117, 38, 20);
