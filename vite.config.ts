@@ -24,6 +24,7 @@ export default defineConfig({
           "lodash-es": ["cloneDeep", "findIndex", "unionBy", "throttle"],
         },
       ],
+      include: [/\.vue$/, /\.ts$/],
       eslintrc: {
         enabled: true,
       },
@@ -32,7 +33,7 @@ export default defineConfig({
     Components({
       dts: "types/components.d.ts",
       deep: true,
-      dirs: ["src/components", "src/views"],
+      dirs: ["src/components"],
       resolvers: [ElementPlusResolver()],
     }),
   ],

@@ -6,7 +6,6 @@ const form = reactive({ username: "admin", password: "123456" });
 const onLogin = async () => {
   push({
     path: (query.fromPath || "/") as string,
-    query: cloneQuery,
   });
 };
 </script>

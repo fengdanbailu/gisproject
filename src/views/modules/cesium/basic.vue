@@ -27,12 +27,19 @@ onMounted(async () => {
   //     requestWaterMask: true,
   //   }),
   // });
-  // test1();
-  test2();
-  // test3();
-  // test4();
-  // entity1();
-  entity2();
+
+  // 常用
+  if (Math.random() < 0.9999) {
+    test2();
+    entity2();
+  } else {
+    test1();
+    test2();
+    test3();
+    test4();
+    entity1();
+    entity2();
+  }
 });
 
 const entity2 = () => {
@@ -53,6 +60,8 @@ const entity2 = () => {
       backgroundColor: new Cesium.Color(255, 255, 0), // backgroundColor不生效
     },
   });
+  console.log(billboard);
+  console.log(label);
   // viewer.zoomTo(billboard);
   // viewer.zoomTo(label);
 };
@@ -75,6 +84,9 @@ const entity1 = () => {
       color: Cesium.Color.ORANGE,
     },
   });
+
+  console.log(point);
+  console.log(point2);
 
   // viewer.zoomTo(point);
   // viewer.zoomTo(point2);
